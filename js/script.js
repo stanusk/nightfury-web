@@ -4,16 +4,7 @@ BackToTop.full();
 
 // change background images
 // 
-$("#cover").css({background: "none"});
-var covers = $(".cover");
-
-covers.not(":last").hide();
-
 Slider.start();
-
-covers.parents("#cover").click(function(){
-    Slider.toggle();
-});
 
 
 // ajax page load
@@ -27,7 +18,10 @@ links.on("click", "a", function(evt){
 
     if (href === "#" || window.location.href.indexOf(href) != -1) return;
 
-    $("main").load(href + " main > *");
+    $("main").load(href + " main > *", function(){
+        if (href === "index.html") Slider.start();
+        else Slider.stop();
+    });
 
     links.removeClass('selected');
     $(this).parent().addClass('selected');
