@@ -1,0 +1,368 @@
+/* --- BASE RULES (GENERAL) --- */
+
+body {
+  background: #eeefed;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+
+  /*##########################*/
+  color: #323232;
+  line-height: 1.2;
+  /*##########################*/
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* --- LAYOUT RULES (GENERAL) --- */
+
+.l-clearfix:before,
+.l-clearfix:after {
+  content:"";
+  display:table;
+}
+.l-clearfix:after {
+  clear:both;
+}
+.l-clearfix {
+  zoom:1;
+}
+
+.l-box {
+  width: 1170px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+/* --- FORMAT RULES (GENERAL) --- */
+
+
+
+
+/* --- MODULE RULES (INDIVIDUAL) --- */
+
+/* Header */
+.contact-bar {
+  background: #39a3d4;
+}
+
+.personal li {
+  padding: 25px 0;
+  display: inline-block;
+}
+
+.personal a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 38px;
+
+  margin-right: 60px;
+}
+
+.personal .fa {
+  margin-right: 2px;
+  position: relative;
+  top: 4px;
+}
+
+.social {
+  padding: 20px 0;
+}
+
+.social a {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  
+  background: #eeefed;
+
+  margin-left: 2px;
+  border-radius: 2px;
+  
+
+  color: #989898;
+  font-size: 17px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.social a:hover {
+  background: #5bd0ec;
+  color: #fff;
+}
+
+.nav-bar {
+  background: #f2f2f2;
+}
+
+.logo a {
+  display: block;
+  width: 186px;
+  height: 31px;
+
+  margin: 44px 0;
+
+  background: url(../img/logo.png) 0 0 no-repeat;
+
+  text-indent: -9999px;
+}
+
+.nav li {
+  border-left: 1px solid #cecece;
+}
+
+.nav li:last-child {
+  border-right: 1px solid #cecece;
+}
+
+.nav a {
+  display: inline-block;
+  width: 70px;
+
+  padding: 22px 33px 30px;
+
+  color:#a6a6a6;
+  text-align: center;
+}
+
+.nav a:hover,
+.nav .selected a {
+  color: #de5728;
+}
+
+.nav .fa {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Main */
+
+#cover {
+  text-align: right;
+  height: 775px;
+  background: url(../img/home/How-to-Train-Your-Dragon-Berk-Wallpaper.jpg) center -365px no-repeat;
+  position: relative;
+}
+
+#cover .l-box {
+  position: relative;
+  z-index: 1;
+}
+
+.page-title,
+.page-subtitle {
+  display: inline-block;
+  padding: 20px 45px;
+  border-radius: 4px;
+
+  text-transform: uppercase;
+}
+
+.page-title {
+  margin-top: 125px;
+
+  background: #de5728;
+
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  margin-top: 17px;
+
+  background: #eeefed;
+
+  color: #474747;
+  font-size: 34px;
+}
+
+.fadecovers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 775px;
+  overflow: hidden;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+  width: 1920px;
+  height: 1200px;
+}
+
+#info {
+  padding: 45px 0;
+}
+
+#info article {
+  width: 370px;
+  padding-top: 115px;
+  text-align: center;
+}
+
+#info article:not(:last-child) {
+  margin-right: 30px;
+}
+
+#info h2 {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#bullshit {
+  background: url(../img/home/bullshit.png) center 0px no-repeat;
+}
+
+#technologie {
+  background: url(../img/home/kotva.png) center 0px no-repeat;
+}
+
+#support {
+  background: url(../img/home/kompas.png) center 0px no-repeat;
+}
+
+/*Main "kontakt" page*/
+
+#map {
+  height: 622px;
+  background: url(../img/mapa.png) center no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.contact,
+.contact a {
+  color: #616160;
+}
+
+.contact h2 {
+  margin-top: 45px;
+
+  color: #323232;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.contact form {
+  width: 670px;
+}
+
+.contact label:first-of-type {
+  margin-right: 26px;
+}
+
+.contact label:not(.message) {
+  margin-top: 40px;
+  margin-bottom: 35px;
+
+  width: 322px;
+}
+
+.contact input,
+.contact textarea {
+ border: 1px solid #cecece;
+ border-radius: 4px;
+ padding: 5px 10px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+ outline: 1px solid #aeaeae;
+}
+
+.contact input {
+ width: 300px;
+}
+
+.contact textarea {
+  width: 648px;
+  height: 290px;
+
+  resize: none;
+}
+
+.contact input[type="submit"] {
+  margin: 20px 0;
+  padding: 10px;
+  width: 170px;
+
+  background: #de5728;
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact input[type="submit"]:hover {
+  background: #da5223;
+}
+
+.info {
+  margin: 145px 40px 0;
+}
+
+.info ul {
+  margin: 20px 0;
+}
+
+/* Footer */
+footer .l-box {
+  padding: 32px 0;
+  font-size: 14px;
+}
+
+footer,
+footer a {
+  color: #989898;
+}
+
+.sign {
+  background: url(../img/logo.png) 0 0 no-repeat;
+  height: 32px;
+
+  text-indent: 200px;
+  line-height: 32px;
+}
+
+.sign a {
+  color: #e75652;
+}
+
+.foot-nav li {
+  display: inline-block;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.foot-nav li:after {
+  content: " /" ;
+  margin: 0 5px;
+
+}.foot-nav li:last-child:after {
+  content: "" ;
+  margin: 0;
+}
